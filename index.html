@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>InDecor</title>
     <link rel="stylesheet" href="css/style.css">
+    lin
         
 </head>
 <body>
@@ -120,7 +121,7 @@
      </section>
      <section id="cta">
         <h3>Gostou? Então se Inscreva:</h3>
-        <button class="btn">Inscrever</button>
+        <button id="voltar-ao-top"class="btn">Inscrever</button>
      </section>
      <footer id="footer">
         <h3>InDecor</h3>
@@ -128,5 +129,13 @@
         <p><span>Entre em contato:</span> contato@indecor.com.br</p>
         <p><span>Telefone:</span> (21) 9999-9999</p>
      </footer>
+
+     <script>
+        var btn = document.querySelector('#voltar-ao-top');
+
+        btn.addEventListener("click", function(){
+            window.scrollTo(0,0);
+        });
+     </script>
 </body>
 </html>
